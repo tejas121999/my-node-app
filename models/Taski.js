@@ -2,6 +2,7 @@ const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
     class Task extends Model {
+
     }
 
     Task.init({
@@ -17,9 +18,6 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DATE,
             field: 'end_date'
         },
-        // 1 is open task
-        // 2 is inprogress tasks
-        // 3 is completed tasks
         task_status: {
             type: DataTypes.INTEGER,
             field: 'task_status'
